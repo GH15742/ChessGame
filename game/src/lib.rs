@@ -22,7 +22,7 @@ impl Plugin for Game {
     }
 
     fn init(&mut self, scene_path: Option<&str>, mut context: PluginContext) -> GameResult {
-        context.load_scene_or_ui::<Self>(scene_path.unwrap_or("data/scene.rgs"));
+        context.load_scene_or_ui::<Self>(scene_path.unwrap_or("main.ui"));
         Ok(())
     }
 
