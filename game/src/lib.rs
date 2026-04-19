@@ -79,7 +79,6 @@ impl Plugin for Game {
 
         let Ok(ui) = context.user_interfaces.try_get(ui_handle) else { return Ok(()); };
 
-        Log::info(format!("按鈕是：{:?}", ui.node(h).name()));
         self.load_ui("data/scenes/level.ui", context);
         Ok(())
     }
